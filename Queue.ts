@@ -10,37 +10,37 @@
     private items: Array< T > = []
 
     // 入列
-    public enqueue( element ) : void 
+    public Enqueue( element ) : void 
     {
         this.items.push( element );
     }
 
     // 移除队列的第一项,并返回移除的元素
-    public dequeue() : T
+    public Dequeue() : T
     {
         return this.items.shift();
     }
 
     // 返回队列的最前项
-    public front() : T
+    public Front() : T
     {
         return this.items[0];
     }
 
     // 队列是否为空
-    public is_empty() : boolean
+    public IsEmpty() : boolean
     {
         return this.items.length === 0;
     }
 
     // 返回队列大小
-    public size() : number
+    public Size() : number
     {
         return this.items.length;
     }
 
     // 清空队列
-    public clear() : void 
+    public Clear() : void 
     {
         this.items = [];
     }

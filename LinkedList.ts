@@ -27,10 +27,9 @@ export class LinkedList
         this.length = 0;
     }
 
-    public push( el : any )
+    public Push( el : any )
     {
         let node = new DataNode( el );
-        
     }
 }
 

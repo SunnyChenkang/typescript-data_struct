@@ -10,39 +10,39 @@ export class Stack < T >
     private items:Array< T > = [];
 
     // 压栈
-    public push( element ) : void
+    public Push( element ) : void
     {
         this.items.push( element );
     }
 
     // 移除栈顶的元素,同时返回被移除的元素
-    public pop() : T
+    public Pop() : T
     {
-        if ( this.is_empty() ) return null;
+        if ( this.IsEmpty() ) return null;
         return this.items.pop();
     }
 
     // 返回栈顶元素
-    public peek() : T
+    public Peek() : T
     {
-        if ( this.is_empty() ) return null;
+        if ( this.IsEmpty() ) return null;
         return this.items[this.items.length-1];
     }
 
     // 栈是否为空
-    public is_empty() : boolean
+    public IsEmpty() : boolean
     {
         return this.items.length === 0;
     }
 
     // 移除栈所有元素
-    public clear()
+    public Clear()
     {
         this.items = [];
     }
 
     // 返回栈元素
-    public size() : number
+    public Size() : number
     {
         return this.items.length;
     }
